@@ -5,9 +5,6 @@
  * Version: 1.0
  * License: GNU General Public License
  */
-/*!
- * Bootstrap Grid (https://getbootstrap.com/)
- */
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar; }
@@ -1255,8 +1252,49 @@ template {
   font-size: 90%;
   color: #6c757d; }
 
-/*!
- * TNA Toolkit
- */
+/* Fonts */
+/* Colours */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #26262a; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+h1, .h1 {
+  font-size: 2.4em; }
+
+h2, .h2 {
+  font-size: 1.6em; }
+
+h3, .h3 {
+  font-size: 1.3em; }
+
+h4, .h4 {
+  font-size: 1.16em; }
+
+p {
+  margin-bottom: 1.6em; }
+
+a {
+  color: #1d70b8;
+  text-decoration: underline; }
+  a:hover {
+    color: #003078;
+    text-decoration: none; }
+  a:visited {
+    color: #4c2c92; }
+  a:active {
+    color: #1e1e2a; }
+  a:focus {
+    outline: 5px solid #1d70b8;
+    outline-offset: 0;
+    z-index: 999; }
 
 /*# sourceMappingURL=tna-toolkit.0.1.css.map */
