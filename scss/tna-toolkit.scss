@@ -22,9 +22,14 @@ html {
 @import "bootstrap/mixins";
 @import "bootstrap/reboot";
 @import "bootstrap/grid";
+@import "bootstrap/utilities/display";
+@import "bootstrap/utilities/flex";
+@import "bootstrap/utilities/spacing";
+@import "bootstrap/utilities/float";
 @import "bootstrap/tables";
 @import "bootstrap/images";
 
 @import "variables";
 @import "mixin";
 @import "typography";
+@import "header";
