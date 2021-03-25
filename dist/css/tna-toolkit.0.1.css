@@ -3251,9 +3251,11 @@ a {
 
 .tna-header {
   padding: 15px 0;
-  background-color: #fff; }
+  background-color: #fff;
+  color: #26262a; }
   .tna-header--dark {
-    background-color: #26262a; }
+    background-color: #26262a;
+    color: #fff; }
     .tna-header--dark a {
       color: #fff; }
   .tna-header__logo {
