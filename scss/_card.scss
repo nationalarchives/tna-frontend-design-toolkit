@@ -1,0 +1,22 @@
+.tna-card {
+
+  &__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  &__image {
+    overflow: hidden;
+    max-height: 164px;
+  }
+
+  &__title {
+    text-decoration: underline;
+  }
+
+  &__content {
+    color: $color__black;
+  }
+}
