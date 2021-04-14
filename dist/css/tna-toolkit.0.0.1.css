@@ -4592,12 +4592,15 @@ a:focus {
   width: 100%;
   text-decoration: none;
 }
+.tna-card__link h3 {
+  text-decoration: underline;
+}
+.tna-card__link:hover h3 {
+  text-decoration: none;
+}
 .tna-card__image {
   overflow: hidden;
   max-height: 164px;
-}
-.tna-card__title {
-  text-decoration: underline;
 }
 .tna-card__content {
   color: #26262a;
