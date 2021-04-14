@@ -4606,4 +4606,15 @@ a:focus {
   color: #26262a;
 }
 
+.tna-hero-banner {
+  padding: 1.6em;
+}
+.tna-hero-banner--dark {
+  background-color: #26262a;
+  color: #fff;
+}
+.tna-hero-banner__image {
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=tna-toolkit.0.0.1.css.map */
