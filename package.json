@@ -1,0 +1,12 @@
+{
+  "name": "tna-toolkit",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "php -S 'localhost:8000' & open http://localhost:8000 & sass --watch scss/tna-toolkit.scss dist/css/tna-toolkit.0.0.1.css",
+    "stop": "ps aux | grep localhost | awk '{print $2}' | xargs -I {pid} kill -9 {pid}"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}

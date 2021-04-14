@@ -1,0 +1,551 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="A collection of CSS elements for frontend development of flexible layouts whilst maintaining consistency across TNA online.">
+	<meta name="author" content="The National Archives">
+
+	<title>Frontend toolkit - The National Archives</title>
+
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+	<!-- TNA toolkit core CSS -->
+	<link rel="stylesheet" href="dist/css/tna-toolkit.0.0.1.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<!-- Syntax highlighting styles and JavaScript-->
+	<link rel="stylesheet" href="css/github.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Frontend toolkit - The National Archives" />
+	<meta property="og:description" content="A collection of CSS elements for frontend development of flexible layouts whilst maintaining consistency across TNA online." />
+	<meta property="og:site_name" content="The National Archives" />
+	<meta property="og:image" content="1.0/img/tna-square-white-logo.png" />
+
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="dist/img/favicon.png">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="dist/img/favicon.png">
+
+</head>
+
+<body>
+<header class="tna-header tna-header--dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<a href="#">
+					<img src="dist/img/tna-wh-logo.svg" class="img-fluid tna-header__logo" alt="The National Archives">
+				</a>
+			</div>
+			<div class="col-9">
+				<div class="row">
+					<div class="col">
+						<nav class="tna-header__nav tna-header__nav-secondary" role="navigation">
+							<ul class="tna-header__nav-list ml-auto">
+								<li>
+									<a class="tna-header__nav-link" href="#">
+										<span>Sign&nbsp;in</span> <i class="fas fa-user"></i>
+									</a>
+								</li>
+								<li>
+									<a class="tna-header__nav-link" href="#">
+										<span>Register</span> <i class="fas fa-user-plus"></i>
+									</a>
+								</li>
+								<li class="d-md-none">
+									<a class="tna-header__nav-link" href="#">
+										<span>Menu</span> <i class="fas fa-bars"></i>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<main>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10" id="content">
+				<section id="intro">
+
+					<h1>The National Archives frontend design toolkit</h1>
+
+					<p>This front-end toolkit is a collection of CSS and HTML elements designed to create flexible layouts
+						whilst also maintaining consistency across TNA online.</p>
+
+					<p>Designers and developers can use the toolkit to:</p>
+					<ul>
+						<li>create online interfaces with a consistent look and feel</li>
+						<li>prototype, test and get feedback quickly and easily</li>
+					</ul>
+					<h2>Design components</h2>
+					<ul>
+						<li><a href="#grid">Grid and layout</a></li>
+						<li><a href="#typography">Typography</a></li>
+						<li><a href="#lists">Lists</a></li>
+						<li><a href="#forms">Forms</a></li>
+						<li><a href="#tables">Tables</a></li>
+					</ul>
+
+				</section>
+
+				<!--
+                --
+                --
+                GRID & LAYOUT
+                --
+                --
+                -->
+				<section id="grid">
+					<h2>Grid and layout</h2>
+
+					<h3>Default page layout</h3>
+					<h5>Examples</h5>
+					<div class="examples tna-page">
+						<div class="container">
+							<div class="row">
+								<main class="col-xs-12 col-sm-8" role="main">
+									<article>
+										<div class="tna-page__header">
+											<h1>Main</h1>
+										</div>
+										<div class="tna-page__entry">
+											<p>Lorem ipsum dolor sit amet, suas graeci ius no. Solet postea duo et, esse fastidii inimicus in eam. Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus.</p>
+											<p>Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus. Lorem ipsum dolor sit amet, suas graeci ius no. Solet postea duo et, esse fastidii inimicus in eam.</p>
+											<p>Solet postea duo et, esse fastidii inimicus in eam. Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus.</p>
+											<p>Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus. Velit labore habemus in duo, ne hinc platonem instructior pri. Solet postea duo et, esse fastidii inimicus in eam.</p>
+										</div>
+									</article>
+								</main>
+								<aside class="col-xs-12 col-sm-4" role="complementary">
+									<div class="tna-page__sidebar">
+										<h2><a href="#">Aside</a></h2>
+										<ul class="tna-page__sidebar__nav">
+											<li><a href="#">Main page</a></li>
+											<li><a href="#">Sibling page</a></li>
+											<li><a href="#">Sibling page</a></li>
+										</ul>
+									</div>
+								</aside>
+							</div>
+						</div>
+					</div>
+					<h5>Usage</h5>
+					<!-- Code example -->
+
+					<pre><code>&lt;div class="tna-page"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;main class="col-xs-12 col-sm-8" role="main"&gt;
+        &lt;article&gt;
+          &lt;div class="tna-page__header"&gt;
+            &lt;h1&gt;Main&lt;/h1&gt;
+          &lt;/div&gt;
+          &lt;div class="tna-page__entry"&gt;
+            &lt;p&gt;...&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/article&gt;
+      &lt;/main&gt;
+      &lt;aside class="col-xs-12 col-sm-4" role="complementary"&gt;
+        &lt;div class="tna-page__sidebar"&gt;
+          &lt;h2&gt;Aside&lt;/h2&gt;
+          ...
+        &lt;/div&gt;
+      &lt;/aside&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+					<!-- Code example end -->
+					<p class="text-right"><a href="#intro"><small>Back to top</small></a></p>
+				</section>
+
+				<!--
+                --
+                --
+                TYPOGRAPHY
+                --
+                --
+                -->
+				<section id="typography">
+					<h2>Typography</h2>
+					<p>Primary font: <strong>Open Sans</strong></p>
+					<pre><code>font-family: 'Open Sans', sans-serif;</code></pre>
+					<p>heading font: <strong>Roboto</strong></p>
+					<pre><code>font-family: 'Roboto', sans-serif;</code></pre>
+					<h3>Headings</h3>
+					<h5>Examples</h5>
+					<div class="examples">
+						<h1>h1 heading</h1>
+						<h2>h2 heading</h2>
+						<h3>h3 heading</h3>
+						<h4>h4 heading</h4>
+					</div>
+					<h5>Usage</h5>
+					<!-- Code example -->
+
+					<pre><code>&lt;h1&gt;h1 heading&lt;/h1&gt;
+&lt;h2&gt;h2 heading&lt;/h2&gt;
+&lt;h3&gt;h3 heading&lt;/h3&gt;
+&lt;h4&gt;h4 heading&lt;/h4&gt;</code></pre>
+
+					<!-- Code example end -->
+					<p class="text-right"><a href="#intro"><small>Back to top</small></a></p>
+					<h3>Body copy</h3>
+					<h5>Examples</h5>
+					<div class="examples">
+						<p>Body copy</p>
+						<p><small>Body copy small</small></p>
+						<p>Body copy <strong>bold</strong></p>
+					</div>
+					<h5>Usage</h5>
+					<!-- Code example -->
+
+					<pre><code>&lt;p&gt;Body copy&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Body copy small&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;Body copy &lt;strong&gt;bold&lt;/strong&gt;&lt;/p&gt;</code></pre>
+
+					<!-- Code example end -->
+					<p class="text-right"><a href="#intro"><small>Back to top</small></a></p>
+					<h3>Default blockquote</h3>
+					<h5>Examples</h5>
+					<div class="examples page">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-12">
+									<p>Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus. Lorem ipsum dolor sit amet, suas graeci ius no. Solet postea duo et, esse fastidii inimicus in eam. Solet postea duo et, esse fastidii inimicus in eam. Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus.</p>
+									<blockquote class="tna-blockquote">
+										<p>The quote appears within an article with a border. The quote should be a single paragraph with the provider of the quote applied using the Attribution function. The quote provider’s will then appear to the bottom right of the quote at a smaller size.</p>
+										<cite class="tna-blockquote__cite">Source title</cite>
+									</blockquote>
+									<p>Lorem ipsum dolor sit amet, suas graeci ius no. Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus. Solet postea duo et, esse fastidii inimicus in eam. Solet postea duo et, esse fastidii inimicus in eam. Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h5>Usage</h5>
+					<!-- Code example -->
+
+					<pre><code>&lt;blockquote class="tna-blockquote"&gt;
+	&lt;p&gt;The quote appears...&lt;/p&gt;
+	&lt;cite&gt;Quote source...&lt;/cite&gt;
+&lt;/blockquote&gt;</code></pre>
+
+					<!-- Code example end -->
+					<p class="text-right"><a href="#intro"><small>Back to top</small></a></p>
+				</section>
+
+				<!--
+                --
+                --
+                Lists
+                --
+                --
+                -->
+				<section id="lists">
+					<h2>Lists</h2>
+					<h3>Unordered list</h3>
+					<h5>Examples</h5>
+					<div class="examples">
+						<ul>
+							<li>Lorem ipsum</li>
+							<li>Consectetur</li>
+							<li>Integer molestie</li>
+						</ul>
+					</div>
+					<h5>Usage</h5>
+					<!-- Code example -->
+
+					<pre><code>&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+					<!-- Code example end -->
+					<p class="text-right"><a href="#intro"><small>Back to top</small></a></p>
+					<h3>Ordered list</h3>
+					<h5>Examples</h5>
+					<div class="examples">
+						<ol>
+							<li>Lorem ipsum</li>
+							<li>Consectetur</li>
+							<li>Integer molestie</li>
+						</ol>
+					</div>
+					<h5>Usage</h5>
+					<!-- Code example -->
+
+					<pre><code>&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+					<!-- Code example end -->
+					<p class="text-right"><a href="#intro"><small>Back to top</small></a></p>
+					<h3>Unordered list without bullets</h3>
+					<h5>Examples</h5>
+					<div class="examples">
+						<ul class="tna-ul--no-bullet">
+							<li>Lorem ipsum</li>
+							<li>Consectetur</li>
+							<li>Integer molestie</li>
+						</ul>
+					</div>
+					<h5>Usage</h5>
+					<!-- Code example -->
+
+					<pre><code>&lt;ul class="tna-ul--no-bullet"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+					<!-- Code example end -->
+					<p class="text-right"><a href="#intro"><small>Back to top</small></a></p>
+					<h3>Menu list</h3>
+					<h5>Examples</h5>
+					<div class="examples">
+						<ul class="tna-ul--menu">
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Consectetur</a></li>
+							<li><a href="#">Integer molestie</a></li>
+						</ul>
+					</div>
+					<h5>Usage</h5>
+					<!-- Code example -->
+
+					<pre><code>&lt;ul class="tna-ul--menu"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+					<!-- Code example end -->
+					<p class="text-right"><a href="#intro"><small>Back to top</small></a></p>
+				</section>
+
+				<!--
+                --
+                --
+                FORMS
+                --
+                --
+                -->
+				<section id="forms">
+					<h2>Forms</h2>
+
+					<h3>Basic form</h3>
+					<h5>Examples</h5>
+					<div class="examples">
+						<form class="tna-form">
+							<fieldset>
+								<legend>Your enquiry</legend>
+								<div class="tna-form__row">
+									<label for="full_name">Full name <span class="form__optional">(optional)</span></label>
+									<input type="text" id="full_name" name="full_name">
+								</div>
+								<div class="tna-form__row">
+									<label for="email">Email address</label>
+									<input type="email" id="email" name="email" aria-required="true" required>
+								</div>
+								<div class="tna-form__row">
+									<label for="type">Type of enquiry</label>
+									<select id="type" name="type">
+										<option value="">Please select</option>
+										<option value="Compliment">Compliment</option>
+										<option value="Comment">Comment</option>
+										<option value="Concern">Concern</option>
+									</select>
+								</div>
+								<div class="tna-form__row">
+									<label for="form_enquiry">Your enquiry</label>
+									<textarea id="form_enquiry" name="enquiry" aria-required="true" required></textarea>
+								</div>
+								<div class="tna-form__row tna-form__checkbox">
+									<input type="checkbox" id="news_yes" name="newsletter" value="yes">
+									<label for="news_yes">Tick here to receive our free monthly newsletter</label>
+								</div>
+								<div class="tna-form__row">
+									<input type="submit" name="submit" id="form_submit" value="Submit" class="tna-button">
+								</div>
+							</fieldset>
+						</form>
+					</div>
+
+					<p class="text-right"><a href="#intro"><small>Back to top</small></a></p>
+				</section>
+
+				<!--
+                --
+                --
+                TABLES
+                --
+                --
+                -->
+				<section id="tables">
+					<h2>Tables</h2>
+
+					<h3>Default table</h3>
+					<h5>Examples</h5>
+					<div class="examples">
+						<table class="table">
+							<thead>
+							<tr>
+								<th>ID</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<th>1</th>
+								<td>Mark</td>
+								<td>Otto</td>
+							</tr>
+							<tr>
+								<th>2</th>
+								<td>Jacob</td>
+								<td>Thornton</td>
+							</tr>
+							<tr>
+								<th>3</th>
+								<td>Larry</td>
+								<td>the Bird</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5>Usage</h5>
+					<!-- Code example -->
+
+					<pre><code>&lt;table class="table"&gt;
+	...
+&lt;/table&gt;</code></pre>
+
+					<!-- Code example end -->
+					<p class="text-right"><a href="#intro"><small>Back to top</small></a></p>
+				</section>
+
+			</div>
+			<div class="col-md-12" id="section-footer">
+
+			</div>
+		</div>
+	</div>
+</main>
+<footer class="tna-footer">
+	<div class="tna-footer__subscribe">
+		<div class="container">
+			<div class="row justify-content-md-center pt-3 pb-3">
+				<div class="col-md-1">
+					<i class="far fa-envelope h1"></i>
+				</div>
+				<div class="col-md-6">
+					<h4 class="h3">Sign me up to The National Archives' mailing list</h4>
+					<p>Subscribe now for regular news, updates and priority booking for events.</p>
+				</div>
+				<div class="col-md-2">
+					<a href="#" class="mt-md-3 tna-button">Sign up</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tna-footer__content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>The National Archives</h3>
+					<p>Kew, Richmond TW9 4DU</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 col-md-3">
+					<h4>Find out more</h4>
+					<ul class="tna-ul--no-bullet">
+						<li><a href="">Contact us</a></li>
+						<li><a href="">Press room</a></li>
+						<li><a href="">Jobs and careers</a></li>
+						<li><a href="">Friends of The National Archives</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md-3">
+					<h4>Site help</h4>
+					<ul class="tna-ul--no-bullet">
+						<li><a href="">Help</a></li>
+						<li><a href="">Website A-Z index</a></li>
+						<li><a href="">Accessibility</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md-3">
+					<h4>Websites</h4>
+					<ul class="tna-ul--no-bullet">
+						<li><a href="">Blog</a></li>
+						<li><a href="">Podcasts and videos</a></li>
+						<li><a href="">Shop</a></li>
+						<li><a href="">Image library</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md-3">
+					<h4>Legal</h4>
+					<ul class="tna-ul--no-bullet">
+						<li><a href="">Terms of use</a></li>
+						<li><a href="">Privacy policy</a></li>
+						<li><a href="">Cookies</a></li>
+						<li><a href="">Our fees</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row justify-content-md-center mb-5 mt-3 text-center tna-footer__social-media-links">
+				<div class="col-4 col-sm-4 col-md-1">
+					<i class="fab fa-twitter"></i>
+				</div>
+				<div class="col-4 col-sm-4 col-md-1">
+					<i class="fab fa-youtube"></i>
+				</div>
+				<div class="col-4 col-sm-4 col-md-1">
+					<i class="fab fa-flickr"></i>
+				</div>
+				<div class="col-4 col-sm-4 col-md-1">
+					<i class="fab fa-facebook-square"></i>
+				</div>
+				<div class="col-4 col-sm-4 col-md-1">
+					<i class="fab fa-instagram"></i>
+				</div>
+				<div class="col-4 col-sm-4 col-md-1">
+					<i class="fas fa-rss"></i>
+				</div>
+			</div>
+			<div class="row justify-content-md-center pb-3">
+				<div class="col-md-1 text-center">
+					<img src="dist/img/logo-ogl.png"
+						 alt="Open Government License logo" style="max-width: 64px;">
+				</div>
+				<div class="col-md-8 text-center">
+					<h4 class="mt-0">Frontend design toolkit - The National Archives</h4>
+					<p>
+						All content is available under the
+						<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/"
+						   title="External website - opens in a new window" target="_blank">
+						Open Government Licence v3.0</a>, except where otherwise stated
+					</p>
+				</div>
+				<div class="col-md-1 text-center">
+					<a title="External website - opens in a new window" href="http://gov.uk/" target="_blank" rel="noopener noreferrer">
+						<img alt="GOV.UK logo" src="dist/img/logo-gov-uk.png">
+						<span class="sr-only">Opens a new window</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

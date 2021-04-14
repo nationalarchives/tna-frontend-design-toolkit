@@ -1,0 +1,94 @@
+.tna-button {
+  background-color: $color__black;
+  color: $color__white;
+  border: $default__border;
+  padding: 0.5em 0.9em;
+  display: inline-block;
+  min-width: 24px;
+  text-align: center;
+
+  &:visited, &:active {
+    background-color: $color__black;
+    color: $color__white;
+  }
+
+  &:hover {
+    background-color: $color__white;
+    color: $color__black;
+    text-decoration: none;
+  }
+
+  &:focus {
+    @include focus-default;
+  }
+
+  &--primary {
+    background-color: $color__white;
+    color: $color__black;
+
+    &:visited, &:active {
+      background-color: $color__white;
+      color: $color__black;
+    }
+
+    &:hover {
+      background-color: $color__black;
+      color: $color__white;
+      text-decoration: none;
+    }
+  }
+
+  &--secondary {
+    border-color: $color__grey-light;
+    background-color: $color__grey-light;
+    color: $color__black;
+
+    &:visited, &:active {
+      background-color: $color__grey-light;
+      color: $color__black;
+    }
+
+    &:hover {
+      border-color: $color__black;
+      background-color: $color__black;
+      color: $color__white;
+      text-decoration: none;
+    }
+  }
+
+  &--tertiary {
+    border-color: $color__white;
+    background-color: $color__white;
+    color: $color__black;
+
+    &:visited, &:active {
+      background-color: $color__white;
+      color: $color__black;
+    }
+
+    &:hover {
+      border-color: $color__black;
+      background-color: $color__black;
+      color: $color__white;
+      text-decoration: none;
+    }
+  }
+
+  &--invert {
+    border-color: $color__grey-light;
+    background-color: transparent;
+    color: $color__grey-light;
+
+    &:visited, &:active {
+      background-color: transparent;
+      color: $color__grey-light;
+    }
+
+    &:hover {
+      border-color: $color__black;
+      background-color: $color__black;
+      color: $color__white;
+      text-decoration: none;
+    }
+  }
+}
