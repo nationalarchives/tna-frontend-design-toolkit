@@ -2,6 +2,8 @@
 
 ## Cards
 
+![Image of cards](example.png)
+
 ### Usage
 ```html
 <article class="tna-card">
