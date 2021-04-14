@@ -6,12 +6,14 @@
     width: 100%;
     text-decoration: none;
 
-    h3 {
+    h2, h3, h4 {
       text-decoration: underline;
     }
 
-    &:hover h3 {
-      text-decoration: none;
+    &:hover {
+      h2, h3, h4 {
+        text-decoration: none;
+      }
     }
   }
 

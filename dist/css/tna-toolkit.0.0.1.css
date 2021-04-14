@@ -4592,10 +4592,10 @@ a:focus {
   width: 100%;
   text-decoration: none;
 }
-.tna-card__link h3 {
+.tna-card__link h2, .tna-card__link h3, .tna-card__link h4 {
   text-decoration: underline;
 }
-.tna-card__link:hover h3 {
+.tna-card__link:hover h2, .tna-card__link:hover h3, .tna-card__link:hover h4 {
   text-decoration: none;
 }
 .tna-card__image {
