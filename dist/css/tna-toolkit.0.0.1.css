@@ -4566,6 +4566,9 @@ a:focus {
 .tna-header__nav-link span:hover {
   text-decoration: underline;
 }
+.tna-header__nav-primary {
+  font-size: 1.2em;
+}
 
 .tna-footer {
   background-color: #eee;
