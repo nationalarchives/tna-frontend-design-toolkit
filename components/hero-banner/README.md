@@ -6,7 +6,7 @@
 
 ### Usage
 ```html
-<div class="tna-hero-banner tna-hero-banner--dark">
+<div class="tna-hero-banner tna-bg--dark">
     <div class="container">
         <div class="row">
             <div class="col-6">
@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="col-6">
-                <div class="tna-hero-banner__content">
+                <div class="tna-hero-banner__body">
                     <h3 class="h1">Hero banner with image</h3>
                     <p>Labore habemus in duo. Velit labore habemus in duo.</p>
                     <p><a href="#" class="tna-button tna-button--primary">Find out more</a></p>
@@ -30,11 +30,11 @@
 
 ### Usage
 ```html
-<div class="tna-hero-banner tna-hero-banner--dark">
+<div class="tna-hero-banner tna-bg--dark">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="tna-hero-banner__content">
+                <div class="tna-hero-banner__body">
                     <h3 class="h1">Hero banner without image</h3>
                     <p>Labore habemus in duo. Velit labore habemus in duo.</p>
                     <p><a href="#" class="tna-button tna-button--primary">Find out more</a></p>
@@ -52,7 +52,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <div class="tna-hero-banner tna-hero-banner--dark">
+            <div class="tna-hero-banner tna-bg--dark">
                 <div class="row">
                     <div class="col-6">
                         <div class="tna-hero-banner__image">
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="tna-hero-banner__content">
+                        <div class="tna-hero-banner__body">
                             <h3 class="h1">Hero banner column width</h3>
                             <p>Labore habemus in duo. Velit labore habemus in duo.</p>
                             <p><a href="#" class="tna-button tna-button--primary">Find out more</a></p>
