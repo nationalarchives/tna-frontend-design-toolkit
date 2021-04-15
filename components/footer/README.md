@@ -7,9 +7,9 @@
 ### Usage
 ```html
 <footer class="tna-footer">
-    <div class="tna-footer__subscribe tna-bg--green">
+    <div class="tna-footer__subscribe tna-bg--green py-3">
         <div class="container">
-            <div class="row justify-content-md-center py-3">
+            <div class="row justify-content-md-center">
                 <div class="col-md-1">
                     <i class="far fa-envelope h1"></i>
                 </div>
@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div class="tna-footer__body tna-bg--dark">
+    <div class="tna-footer__heading tna-bg--dark">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -31,16 +31,16 @@
                     <p>Kew, Richmond TW9 4DU</p>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="tna-footer__body tna-bg--dark pb-3">
+        <div class="container">
             <div class="row">
                 <div class="col-6 col-md-3">
                     <h4>Heading</h4>
                     <ul class="tna-ul--no-bullet">
                         <li><a href="">Menu item</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h4>Heading</h4>
-                    <ul class="tna-ul--no-bullet">
+                        <li><a href="">Menu item</a></li>
                         <li><a href="">Menu item</a></li>
                     </ul>
                 </div>
@@ -48,16 +48,32 @@
                     <h4>Heading</h4>
                     <ul class="tna-ul--no-bullet">
                         <li><a href="">Menu item</a></li>
+                        <li><a href="">Menu item</a></li>
+                        <li><a href="">Menu item</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md-3">
                     <h4>Heading</h4>
                     <ul class="tna-ul--no-bullet">
+                        <li><a href="">Menu item</a></li>
+                        <li><a href="">Menu item</a></li>
+                        <li><a href="">Menu item</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4>Heading</h4>
+                    <ul class="tna-ul--no-bullet">
+                        <li><a href="">Menu item</a></li>
+                        <li><a href="">Menu item</a></li>
                         <li><a href="">Menu item</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="row justify-content-md-center mb-5 mt-3 text-center tna-footer__social-media-links">
+        </div>
+    </div>
+    <div class="tna-footer__social-media-links tna-bg--dark pb-3">
+        <div class="container">
+            <div class="row justify-content-md-center text-center">
                 <div class="col-4 col-sm-4 col-md-1">
                     <i class="fab fa-twitter"></i>
                 </div>
@@ -77,10 +93,14 @@
                     <i class="fas fa-rss"></i>
                 </div>
             </div>
-            <div class="row justify-content-md-center pb-3">
+        </div>
+    </div>
+    <div class="tna-footer__base tna-bg--dark pb-3">
+        <div class="container">
+            <div class="row justify-content-md-center">
                 <div class="col-md-1 text-center">
                     <img src="logo-ogl.png"
-                         alt="Open Government License logo" style="max-width: 64px;">
+                         alt="Open Government License logo">
                 </div>
                 <div class="col-md-8 text-center">
                     <h4 class="mt-0">The National Archives</h4>
@@ -92,8 +112,9 @@
                     </p>
                 </div>
                 <div class="col-md-1 text-center">
-                    <a title="External website - opens in a new window" href="http://gov.uk/" target="_blank" rel="noopener noreferrer">
-                        <img alt="GOV.UK logo" src="logo-gov-uk.png">
+                    <a title="External website - opens in a new window" href="http://gov.uk/" target="_blank" 
+                        rel="noopener noreferrer">
+                        <img alt="GOV.UK logo" src="ogo-gov-uk.png">
                         <span class="sr-only">Opens a new window</span>
                     </a>
                 </div>
