@@ -1,11 +1,6 @@
 .tna-hero-banner {
   padding: 1.6em;
 
-  &--dark {
-    background-color: $color__black;
-    color: $color__white;
-  }
-
   &__image {
     overflow: hidden;
   }
