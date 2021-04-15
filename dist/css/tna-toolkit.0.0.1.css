@@ -4565,7 +4565,6 @@ a:focus {
 
 .tna-footer {
   background-color: #efefef;
-  color: #26262a;
 }
 .tna-footer__social-media-links {
   font-size: 2rem;
@@ -4589,6 +4588,7 @@ a:focus {
 }
 
 .tna-hero-banner {
+  background-color: #efefef;
   padding: 1.6em;
 }
 .tna-hero-banner__image {

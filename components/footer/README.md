@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div class="tna-footer__content tna-bg--dark">
+    <div class="tna-footer__body tna-bg--dark">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
