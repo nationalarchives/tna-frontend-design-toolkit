@@ -2,7 +2,7 @@
 
 ## Hero banners
 
-### Hero banner with image full width
+### Hero banner full width with image
 ```html
 <div class="tna-hero-banner tna-bg--dark">
     <div class="container">
@@ -22,7 +22,7 @@
 </div>
 ```
 
-### Hero banner without image full width
+### Hero banner full width without image
 ```html
 <div class="tna-hero-banner tna-bg--dark">
     <div class="container">
@@ -37,7 +37,7 @@
 </div>
 ```
 
-### Hero banner with image column width
+### Hero banner column width with image
 ```html
 <div class="container">
     <div class="row">
