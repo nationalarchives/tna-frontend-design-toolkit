@@ -2,9 +2,7 @@
 
 ## Cards
 
-![Image of cards](example.png)
-
-### Usage
+### Standard card with image
 ```html
 <div class="col-4">
     <article class="tna-card">
