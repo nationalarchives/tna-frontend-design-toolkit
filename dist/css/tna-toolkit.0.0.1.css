@@ -4335,6 +4335,39 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* Fonts */
 /* Colours */
+.tna-bg {
+  background-color: #efefef;
+}
+.tna-bg--dark {
+  background-color: #26262a;
+  color: #ffffff;
+}
+.tna-bg--dark a {
+  color: #ffffff;
+}
+.tna-bg--dark a:hover, .tna-bg--dark a:visited, .tna-bg--dark a:active {
+  color: #ffffff;
+}
+.tna-bg--green {
+  background-color: #dde5d5;
+}
+.tna-bg--pink {
+  background-color: #fad3d4;
+}
+
+.tna-text {
+  color: #26262a;
+}
+.tna-text--default {
+  color: #26262a;
+}
+.tna-text--white {
+  color: #ffffff;
+}
+.tna-text--grey {
+  color: #6f777b;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -4404,12 +4437,12 @@ a:focus {
 }
 .tna-ul--menu li a {
   display: block;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #efefef;
   padding: 0.3em 0.2em;
   margin: 0;
 }
 .tna-ul--menu li a:hover {
-  background-color: #eee;
+  background-color: #efefef;
   text-decoration: none;
 }
 .tna-ul--menu-disc {
@@ -4422,10 +4455,10 @@ a:focus {
 }
 .tna-ul--menu-disc a {
   display: block;
-  color: #fff;
-  background-color: #26262a;
+  color: #ffffff;
+  background-color: #000000;
   text-align: center;
-  border: 2px solid #26262a;
+  border: 2px solid #000000;
   font-size: 1.25em;
   line-height: 44px;
   width: 48px;
@@ -4434,26 +4467,26 @@ a:focus {
 }
 .tna-ul--menu-disc a:hover {
   text-decoration: none;
-  background-color: #fff;
-  color: #26262a;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .tna-button {
-  background-color: #26262a;
-  color: #fff;
-  border: 2px solid #26262a;
+  background-color: #26262a !important;
+  color: #ffffff !important;
+  border: 2px solid #000000;
   padding: 0.5em 0.9em;
   display: inline-block;
   min-width: 24px;
   text-align: center;
 }
 .tna-button:visited, .tna-button:active {
-  background-color: #26262a;
-  color: #fff;
+  background-color: #26262a !important;
+  color: #ffffff !important;
 }
 .tna-button:hover {
-  background-color: #fff;
-  color: #26262a;
+  background-color: #ffffff !important;
+  color: #26262a !important;
   text-decoration: none;
 }
 .tna-button:focus {
@@ -4462,75 +4495,36 @@ a:focus {
   z-index: 999;
 }
 .tna-button--primary {
-  background-color: #fff;
-  color: #26262a;
+  background-color: #ffffff !important;
+  color: #26262a !important;
 }
 .tna-button--primary:visited, .tna-button--primary:active {
-  background-color: #fff;
-  color: #26262a;
+  background-color: #ffffff !important;
+  color: #26262a !important;
 }
 .tna-button--primary:hover {
-  background-color: #26262a;
-  color: #fff;
+  background-color: #26262a !important;
+  color: #ffffff !important;
   text-decoration: none;
 }
 .tna-button--secondary {
-  border-color: #eee;
-  background-color: #eee;
-  color: #26262a;
+  border-color: #efefef !important;
+  background-color: #efefef !important;
+  color: #000000;
 }
 .tna-button--secondary:visited, .tna-button--secondary:active {
-  background-color: #eee;
-  color: #26262a;
+  background-color: #efefef !important;
+  color: #000000 !important;
 }
 .tna-button--secondary:hover {
-  border-color: #26262a;
-  background-color: #26262a;
-  color: #fff;
-  text-decoration: none;
-}
-.tna-button--tertiary {
-  border-color: #fff;
-  background-color: #fff;
-  color: #26262a;
-}
-.tna-button--tertiary:visited, .tna-button--tertiary:active {
-  background-color: #fff;
-  color: #26262a;
-}
-.tna-button--tertiary:hover {
-  border-color: #26262a;
-  background-color: #26262a;
-  color: #fff;
-  text-decoration: none;
-}
-.tna-button--invert {
-  border-color: #eee;
-  background-color: transparent;
-  color: #eee;
-}
-.tna-button--invert:visited, .tna-button--invert:active {
-  background-color: transparent;
-  color: #eee;
-}
-.tna-button--invert:hover {
-  border-color: #26262a;
-  background-color: #26262a;
-  color: #fff;
+  border-color: #000000 !important;
+  background-color: #000000 !important;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .tna-header {
   padding: 15px 0;
-  background-color: #fff;
-  color: #26262a;
-}
-.tna-header--dark {
-  background-color: #26262a;
-  color: #fff;
-}
-.tna-header--dark a {
-  color: #fff;
 }
 .tna-header__logo {
   max-width: 90px;
@@ -4552,7 +4546,6 @@ a:focus {
 }
 .tna-header__nav-link {
   padding: 0.5em 0.7em;
-  color: #26262a;
   text-decoration: none;
 }
 .tna-header__nav-link span {
@@ -4566,21 +4559,12 @@ a:focus {
 .tna-header__nav-link span:hover {
   text-decoration: underline;
 }
+.tna-header__nav-primary {
+  font-size: 1.2em;
+}
 
 .tna-footer {
-  background-color: #eee;
-  color: #26262a;
-}
-.tna-footer__subscribe {
-  background-color: #eee;
-  color: #26262a;
-}
-.tna-footer__content {
-  background-color: #26262a;
-  color: #fff;
-}
-.tna-footer__content a {
-  color: #fff;
+  background-color: #efefef;
 }
 .tna-footer__social-media-links {
   font-size: 2rem;
@@ -4602,16 +4586,9 @@ a:focus {
   overflow: hidden;
   max-height: 164px;
 }
-.tna-card__content {
-  color: #26262a;
-}
 
 .tna-hero-banner {
   padding: 1.6em;
-}
-.tna-hero-banner--dark {
-  background-color: #26262a;
-  color: #fff;
 }
 .tna-hero-banner__image {
   overflow: hidden;

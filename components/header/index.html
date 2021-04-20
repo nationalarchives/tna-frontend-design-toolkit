@@ -1,0 +1,153 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="The National Archives frontend design toolkit: Components > Header">
+	<meta name="author" content="The National Archives">
+
+	<title>Header: The National Archives frontend design toolkit</title>
+
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+	<!-- TNA toolkit core CSS -->
+	<link rel="stylesheet" href="../../dist/css/tna-toolkit.0.0.1.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../../css/custom.css">
+
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<!-- Syntax highlighting styles and JavaScript-->
+	<link rel="stylesheet" href="../../css/github.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Frontend toolkit - The National Archives" />
+	<meta property="og:description" content="A collection of CSS elements for frontend development of flexible layouts whilst maintaining consistency across TNA online." />
+	<meta property="og:site_name" content="The National Archives" />
+
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="../../dist/img/favicon.png">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="../../dist/img/favicon.png">
+
+</head>
+
+<body>
+<main id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="../../dist/img/tna-blk-logo.svg" class="img-fluid mt-5" alt="The National Archives" style="max-width: 90px;">
+				<h1>Header</h1>
+				<h2>Example</h2>
+			</div>
+		</div>
+	</div>
+	<div class="tna-header tna-bg--dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-3">
+					<a href="#">
+						<img src="../../dist/img/tna-wh-logo.svg" class="img-fluid tna-header__logo" alt="The National Archives">
+					</a>
+				</div>
+				<div class="col-9">
+					<div class="row">
+						<div class="col">
+							<nav class="tna-header__nav tna-header__nav-secondary" role="navigation">
+								<ul class="tna-header__nav-list ml-auto">
+									<li>
+										<a class="tna-header__nav-link" href="#">
+											<span>Sign&nbsp;in</span> <i class="fas fa-user"></i>
+										</a>
+									</li>
+									<li>
+										<a class="tna-header__nav-link" href="#">
+											<span>Register</span> <i class="fas fa-user-plus"></i>
+										</a>
+									</li>
+									<li class="d-md-none">
+										<a class="tna-header__nav-link" href="#">
+											<span>Menu</span> <i class="fas fa-bars"></i>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<nav class="tna-header__nav tna-header__nav-primary" role="navigation">
+								<ul class="tna-header__nav-list ml-auto">
+									<li>
+										<a class="tna-header__nav-link" href="#">
+											<span>Explore the collection</span>
+										</a>
+									</li>
+									<li>
+										<a class="tna-header__nav-link" href="#">
+											<span>What's one</span>
+										</a>
+									</li>
+									<li>
+										<a class="tna-header__nav-link" href="#">
+											<span>Visit us</span>
+										</a>
+									</li>
+									<li>
+										<a class="tna-header__nav-link" href="#">
+											<span>Learn</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Usage</h3>
+				<pre><code class="html">&lt;header class="tna-header tna-bg--dark"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-3"&gt;
+        &lt;a href="#"&gt;
+          &lt;img src="tna-wh-logo.svg" class="img-fluid tna-header__logo" alt="The National Archives"&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="col-9"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col"&gt;
+            &lt;nav class="tna-header__nav tna-header__nav-secondary" role="navigation"&gt;
+              ...
+            &lt;/nav&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col"&gt;
+            &lt;nav class="tna-header__nav tna-header__nav-primary" role="navigation"&gt;
+              ...
+            &lt;/nav&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+				<p class="text-right"><a href="#content"><small>Back to top</small></a></p>
+			</div>
+		</div>
+	</div>
+</main>
+</body>
+</html>

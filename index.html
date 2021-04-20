@@ -40,7 +40,7 @@
 </head>
 
 <body>
-<header class="tna-header tna-header--dark">
+<header class="tna-header tna-bg--dark">
 	<div class="container">
 		<div class="row">
 			<div class="col-3">
@@ -72,6 +72,34 @@
 						</nav>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col">
+						<nav class="tna-header__nav tna-header__nav-primary" role="navigation">
+							<ul class="tna-header__nav-list ml-auto">
+								<li>
+									<a class="tna-header__nav-link" href="#">
+										<span>Explore the collection</span>
+									</a>
+								</li>
+								<li>
+									<a class="tna-header__nav-link" href="#">
+										<span>What's one</span>
+									</a>
+								</li>
+								<li>
+									<a class="tna-header__nav-link" href="#">
+										<span>Visit us</span>
+									</a>
+								</li>
+								<li>
+									<a class="tna-header__nav-link" href="#">
+										<span>Learn</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -94,84 +122,12 @@
 					</ul>
 					<h2>Design components</h2>
 					<ul>
-						<li><a href="#grid">Grid and layout</a></li>
 						<li><a href="#typography">Typography</a></li>
 						<li><a href="#lists">Lists</a></li>
 						<li><a href="#forms">Forms</a></li>
 						<li><a href="#tables">Tables</a></li>
 					</ul>
 
-				</section>
-
-				<!--
-                --
-                --
-                GRID & LAYOUT
-                --
-                --
-                -->
-				<section id="grid">
-					<h2>Grid and layout</h2>
-
-					<h3>Default page layout</h3>
-					<h5>Examples</h5>
-					<div class="examples tna-page">
-						<div class="container">
-							<div class="row">
-								<main class="col-xs-12 col-sm-8" role="main">
-									<article>
-										<div class="tna-page__header">
-											<h1>Main</h1>
-										</div>
-										<div class="tna-page__entry">
-											<p>Lorem ipsum dolor sit amet, suas graeci ius no. Solet postea duo et, esse fastidii inimicus in eam. Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus.</p>
-											<p>Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus. Lorem ipsum dolor sit amet, suas graeci ius no. Solet postea duo et, esse fastidii inimicus in eam.</p>
-											<p>Solet postea duo et, esse fastidii inimicus in eam. Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus.</p>
-											<p>Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus. Velit labore habemus in duo, ne hinc platonem instructior pri. Solet postea duo et, esse fastidii inimicus in eam.</p>
-										</div>
-									</article>
-								</main>
-								<aside class="col-xs-12 col-sm-4" role="complementary">
-									<div class="tna-page__sidebar">
-										<h2><a href="#">Aside</a></h2>
-										<ul class="tna-page__sidebar__nav">
-											<li><a href="#">Main page</a></li>
-											<li><a href="#">Sibling page</a></li>
-											<li><a href="#">Sibling page</a></li>
-										</ul>
-									</div>
-								</aside>
-							</div>
-						</div>
-					</div>
-					<h5>Usage</h5>
-					<!-- Code example -->
-
-					<pre><code>&lt;div class="tna-page"&gt;
-  &lt;div class="container"&gt;
-    &lt;div class="row"&gt;
-      &lt;main class="col-xs-12 col-sm-8" role="main"&gt;
-        &lt;article&gt;
-          &lt;div class="tna-page__header"&gt;
-            &lt;h1&gt;Main&lt;/h1&gt;
-          &lt;/div&gt;
-          &lt;div class="tna-page__entry"&gt;
-            &lt;p&gt;...&lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/article&gt;
-      &lt;/main&gt;
-      &lt;aside class="col-xs-12 col-sm-4" role="complementary"&gt;
-        &lt;div class="tna-page__sidebar"&gt;
-          &lt;h2&gt;Aside&lt;/h2&gt;
-          ...
-        &lt;/div&gt;
-      &lt;/aside&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
-					<!-- Code example end -->
-					<p class="text-right"><a href="#intro"><small>Back to top</small></a></p>
 				</section>
 
 				<!--
@@ -218,32 +174,6 @@
 					<pre><code>&lt;p&gt;Body copy&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;Body copy small&lt;/small&gt;&lt;/p&gt;
 &lt;p&gt;Body copy &lt;strong&gt;bold&lt;/strong&gt;&lt;/p&gt;</code></pre>
-
-					<!-- Code example end -->
-					<p class="text-right"><a href="#intro"><small>Back to top</small></a></p>
-					<h3>Default blockquote</h3>
-					<h5>Examples</h5>
-					<div class="examples page">
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-12">
-									<p>Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus. Lorem ipsum dolor sit amet, suas graeci ius no. Solet postea duo et, esse fastidii inimicus in eam. Solet postea duo et, esse fastidii inimicus in eam. Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus.</p>
-									<blockquote class="tna-blockquote">
-										<p>The quote appears within an article with a border. The quote should be a single paragraph with the provider of the quote applied using the Attribution function. The quote provider’s will then appear to the bottom right of the quote at a smaller size.</p>
-										<cite class="tna-blockquote__cite">Source title</cite>
-									</blockquote>
-									<p>Lorem ipsum dolor sit amet, suas graeci ius no. Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus. Solet postea duo et, esse fastidii inimicus in eam. Solet postea duo et, esse fastidii inimicus in eam. Velit labore habemus in duo, ne hinc platonem instructior pri. Ea his omnes laboramus.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<h5>Usage</h5>
-					<!-- Code example -->
-
-					<pre><code>&lt;blockquote class="tna-blockquote"&gt;
-	&lt;p&gt;The quote appears...&lt;/p&gt;
-	&lt;cite&gt;Quote source...&lt;/cite&gt;
-&lt;/blockquote&gt;</code></pre>
 
 					<!-- Code example end -->
 					<p class="text-right"><a href="#intro"><small>Back to top</small></a></p>
@@ -307,24 +237,6 @@
 					<!-- Code example -->
 
 					<pre><code>&lt;ul class="tna-ul--no-bullet"&gt;
-  &lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-
-					<!-- Code example end -->
-					<p class="text-right"><a href="#intro"><small>Back to top</small></a></p>
-					<h3>Menu list</h3>
-					<h5>Examples</h5>
-					<div class="examples">
-						<ul class="tna-ul--menu">
-							<li><a href="#">Lorem ipsum</a></li>
-							<li><a href="#">Consectetur</a></li>
-							<li><a href="#">Integer molestie</a></li>
-						</ul>
-					</div>
-					<h5>Usage</h5>
-					<!-- Code example -->
-
-					<pre><code>&lt;ul class="tna-ul--menu"&gt;
   &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
@@ -442,9 +354,9 @@
 	</div>
 </main>
 <footer class="tna-footer">
-	<div class="tna-footer__subscribe">
+	<div class="tna-footer__subscribe tna-bg--green">
 		<div class="container">
-			<div class="row justify-content-md-center pt-3 pb-3">
+			<div class="row justify-content-md-center py-3">
 				<div class="col-md-1">
 					<i class="far fa-envelope h1"></i>
 				</div>
@@ -458,14 +370,18 @@
 			</div>
 		</div>
 	</div>
-	<div class="tna-footer__content">
+	<div class="tna-footer__heading tna-bg--dark">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<h3>The National Archives</h3>
+				<div class="col-md-12 text-center">
+					<h3 class="h2">The National Archives</h3>
 					<p>Kew, Richmond TW9 4DU</p>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="tna-footer__body tna-bg--dark pb-3">
+		<div class="container">
 			<div class="row">
 				<div class="col-6 col-md-3">
 					<h4>Find out more</h4>
@@ -503,7 +419,11 @@
 					</ul>
 				</div>
 			</div>
-			<div class="row justify-content-md-center mb-5 mt-3 text-center tna-footer__social-media-links">
+		</div>
+	</div>
+	<div class="tna-footer__social-media-links tna-bg--dark pb-3">
+		<div class="container">
+			<div class="row justify-content-md-center text-center">
 				<div class="col-4 col-sm-4 col-md-1">
 					<i class="fab fa-twitter"></i>
 				</div>
@@ -523,18 +443,22 @@
 					<i class="fas fa-rss"></i>
 				</div>
 			</div>
-			<div class="row justify-content-md-center pb-3">
+		</div>
+	</div>
+	<div class="tna-footer__base tna-bg--dark pb-3">
+		<div class="container">
+			<div class="row justify-content-md-center">
 				<div class="col-md-1 text-center">
 					<img src="dist/img/logo-ogl.png"
 						 alt="Open Government License logo" style="max-width: 64px;">
 				</div>
 				<div class="col-md-8 text-center">
-					<h4 class="mt-0">Frontend design toolkit - The National Archives</h4>
+					<h4 class="mt-0">The National Archives</h4>
 					<p>
 						All content is available under the
 						<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/"
 						   title="External website - opens in a new window" target="_blank">
-						Open Government Licence v3.0</a>, except where otherwise stated
+							Open Government Licence v3.0</a>, except where otherwise stated
 					</p>
 				</div>
 				<div class="col-md-1 text-center">

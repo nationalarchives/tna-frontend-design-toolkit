@@ -2,17 +2,18 @@
 
 ## Cards
 
-### Usage
+### Standard card with image
 ```html
-<article class="tna-card">
-    <a href="#" class="tna-card__link">
-        <div class="tna-card__image">
-            <img src="/img/placeholder.jpg" alt="Placeholder image">
-        </div>
-        <div class="tna-card__content">
-            <h3>Card title</h3>
-            <p>Labore habemus in duo. Velit labore habemus in duo.</p>
-        </div>
-    </a>
-</article>
+<div class="col-4">
+    <article class="tna-card">
+        <a href="#" class="tna-card__link">
+            <div class="tna-card__image">
+                ...
+            </div>
+            <div class="tna-card__body">
+                ...
+            </div>
+        </a>
+    </article>
+</div>
 ```
