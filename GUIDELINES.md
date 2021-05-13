@@ -4,7 +4,7 @@
 
 TNA frontend toolkit uses the [Block Element Modifier (BEM)](http://getbem.com/) methodology when naming CSS classes. This is designed to help developers understand how the different classes relate to each other.
 
-### Bootstrap 4.3.1 grid
+### Grid
 
 TNA frontend toolkit uses [Bootstrap 4.3.1 grid system](https://getbootstrap.com/docs/4.3/layout/grid/). Other Bootstrap components are not included.
 
@@ -170,6 +170,11 @@ Bad:
   }
 }
 ```
+```html
+<div class="tna-block__element">
+    <a href=""></a>
+</div>
+```
 
 Good:
 ```scss
@@ -177,9 +182,14 @@ Good:
   ...
   
   &__element-link {
-  margin: 0;
+    margin: 0;
   }
 }
+```
+```html
+<div class="tna-block__element">
+    <a href="" class="tna-block__element-link"></a>
+</div>
 ```
 
 #### Properties should be formatted with a single space separating the colon from the property's value
