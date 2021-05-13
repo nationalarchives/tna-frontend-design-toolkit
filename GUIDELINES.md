@@ -239,7 +239,7 @@ Good:
 
   &__image {
     overflow: hidden;
-    max-height: 164px;
+    max-height: 10em;
   }
 
   &__body {
