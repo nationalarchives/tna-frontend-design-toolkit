@@ -207,6 +207,20 @@ Good:
   margin: 0;
 }
 ```
+#### Use relative units than absolute 
+
+Bad: 
+```scss
+.tna-block {
+  padding: 16px;
+}
+```
+Good: 
+```scss
+.tna-block {
+  padding: 1rem;
+}
+```
 
 #### Omit length units on zero values
 
