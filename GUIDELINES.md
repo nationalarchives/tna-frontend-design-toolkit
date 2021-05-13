@@ -24,12 +24,6 @@ tna-[block]__[element]--[modifier]--[modifier-value]
 
 #### Avoid mixing BEM and grid classes on the same element
 
-Bad:
-```html
-<div class="col-sm-8 tna-block__element">
-</div>
-```
-
 Good:
 ```html
 <div class="col-sm-8">
@@ -45,12 +39,13 @@ Good:
 </div>
 ```
 
-#### Write each property on its own line
-
 Bad:
-```scss
-.tna-block {border: 0; padding: 0;}
+```html
+<div class="col-sm-8 tna-block__element">
+</div>
 ```
+
+#### Write each property on its own line
 
 Good:
 ```scss
@@ -60,22 +55,12 @@ Good:
 }
 ```
 
-#### Use SASS nesting
-
 Bad:
 ```scss
-.tna-block {
-  ...
-}
-
-.tna-block__element {
-  ...
-}
-
-.tna-block__element--modifier {
-  ...
-}
+.tna-block {border: 0; padding: 0;}
 ```
+
+#### Use SASS nesting
 
 Good:
 ```scss
@@ -92,14 +77,22 @@ Good:
 }
 ```
 
-#### Use variables for colours
-
 Bad:
 ```scss
 .tna-block {
-  color: #005ea5;
+  ...
+}
+
+.tna-block__element {
+  ...
+}
+
+.tna-block__element--modifier {
+  ...
 }
 ```
+
+#### Use variables for colours
 
 Good:
 ```scss
@@ -108,7 +101,21 @@ Good:
 }
 ```
 
+Bad:
+```scss
+.tna-block {
+  color: #005ea5;
+}
+```
+
 #### Avoid using ID selectors
+
+Good:
+```scss
+.tna-block {
+  ...
+}
+```
 
 Bad:
 ```scss
@@ -117,14 +124,22 @@ Bad:
 }
 ```
 
+#### Separate rule, function, and mixin declarations with empty lines
+
 Good:
 ```scss
-.tna-block {
+.tna-block-one {
+  margin: 0;
+
+  &__element {
+    ...
+  }
+}
+
+.tna-block-two {
   ...
 }
 ```
-
-#### Separate rule, function, and mixin declarations with empty lines
 
 Bad:
 ```scss
@@ -134,47 +149,12 @@ Bad:
     ...
   }
 }
-.tna-block-two {
-  ...
-}
-```
-
-Good:
-```scss
-.tna-block-one {
-  margin: 0;
-
-  &__element {
-    ...
-  }
-}
-
 .tna-block-two {
   ...
 }
 ```
 
 #### Avoid declaring HTML tags
-
-Bad:
-```scss
-.tna-block {
-  ...
-  
-  &__element {
-  ...
-  
-    a {
-      margin: 0;
-    }
-  }
-}
-```
-```html
-<div class="tna-block__element">
-    <a href=""></a>
-</div>
-```
 
 Good:
 ```scss
@@ -192,7 +172,35 @@ Good:
 </div>
 ```
 
+Bad:
+```scss
+.tna-block {
+  ...
+  
+  &__element {
+  ...
+  
+    a {
+      margin: 0;
+    }
+  }
+}
+```
+
+```html
+<div class="tna-block__element">
+    <a href=""></a>
+</div>
+```
+
 #### Properties should be formatted with a single space separating the colon from the property's value
+
+Good:
+```scss
+.tna-block {
+  margin: 0;
+}
+```
 
 Bad:
 ```scss
@@ -201,20 +209,8 @@ Bad:
 }
 ```
 
-Good:
-```scss
-.tna-block {
-  margin: 0;
-}
-```
 #### Use relative units rather than absolute 
 
-Bad: 
-```scss
-.tna-block {
-  padding: 16px;
-}
-```
 Good: 
 ```scss
 .tna-block {
@@ -222,19 +218,26 @@ Good:
 }
 ```
 
-#### Omit length units on zero values
-
-Bad:
+Bad: 
 ```scss
 .tna-block {
-  margin: 0px;
+  padding: 16px;
 }
 ```
+
+#### Omit length units on zero values
 
 Good:
 ```scss
 .tna-block {
   margin: 0;
+}
+```
+
+Bad:
+```scss
+.tna-block {
+  margin: 0px;
 }
 ```
 
