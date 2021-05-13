@@ -241,6 +241,22 @@ Bad:
 }
 ```
 
+#### Use a similar BEM format for variables
+
+Bad:
+```scss
+$heading: 'Roboto', sans-serif;
+
+$blue: #1d70b8;
+```
+
+Good:
+```scss
+$font__heading: 'Roboto', sans-serif;
+
+$color__blue: #1d70b8;
+```
+
 ### Examples
 
 #### Card
