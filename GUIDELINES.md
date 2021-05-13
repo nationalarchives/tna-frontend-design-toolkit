@@ -260,11 +260,6 @@ $blue: #1d70b8;
 
 #### Using modifiers with variables
 
-Bad:
-```scss
-$light-blue: #d2e2f1;
-```
-
 Good:
 ```scss
 $color__blue:     #1d70b8; /* 100% tint */
@@ -272,6 +267,11 @@ $color__blue--80: #4a8dc6; /* 80% tint */
 $color__blue--60: #77a9d4; /* 60% tint */
 $color__blue--40: #a5c6e3; /* 40% tint */
 $color__blue--20: #d2e2f1; /* 20% tint */
+```
+
+Bad:
+```scss
+$light-blue: #d2e2f1;
 ```
 
 ### Examples
