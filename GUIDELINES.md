@@ -207,7 +207,7 @@ Good:
   margin: 0;
 }
 ```
-#### Use relative units than absolute 
+#### Use relative units rather than absolute 
 
 Bad: 
 ```scss
