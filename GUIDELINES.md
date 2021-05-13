@@ -223,3 +223,46 @@ Good:
   margin: 0;
 }
 ```
+
+### Examples
+
+#### Card
+```scss
+.tna-card {
+
+  &__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  &__image {
+    overflow: hidden;
+    max-height: 164px;
+  }
+
+  &__body {
+    margin: 0.3em 0;
+  }
+}
+```
+```html
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <article class="tna-card">
+                <a href="#" class="tna-card__link">
+                    <div class="tna-card__image">
+                        <img src="image.jpg" alt="image">
+                    </div>
+                    <div class="tna-card__body">
+                        <h3>Title</h3>
+                        <p>Labore habemus in duo. Velit labore habemus in duo.</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </div>
+</div>
+```
