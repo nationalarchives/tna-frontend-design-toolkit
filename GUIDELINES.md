@@ -92,12 +92,16 @@ Bad:
 }
 ```
 
-#### Use variables for colours
+#### Use variables for colours and fonts
 
 Good:
 ```scss
 .tna-block {
-  color: $blue;
+  color: $color__blue;
+
+  &__heading {
+    font-family: $font__heading;
+  }
 }
 ```
 
@@ -105,6 +109,10 @@ Bad:
 ```scss
 .tna-block {
   color: #005ea5;
+
+  &__heading {
+      font-family: "Roboto", sans-serif;
+  }
 }
 ```
 
