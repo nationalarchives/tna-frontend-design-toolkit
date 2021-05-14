@@ -248,6 +248,7 @@ Good:
 $font__heading: 'Roboto', sans-serif;
 
 $color__blue: #1d70b8;
+
 $color__link: $color__blue;
 ```
 
@@ -256,6 +257,8 @@ Bad:
 $heading: 'Roboto', sans-serif;
 
 $blue: #1d70b8;
+
+$link: #1d70b8;
 ```
 
 #### Using modifiers with variables
