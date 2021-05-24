@@ -18,6 +18,10 @@ TNA frontend toolkit uses [Bootstrap 4.3.1 grid system](https://getbootstrap.com
 * The value of a modifier is separated from its name by a double hyphen (--).
 ```html
 tna-[block]__[element]--[modifier]--[modifier-value]
+
+.tna-menu {}                // Block - the root of a component
+.tna-menu__item {}          // Element - a part of the block
+.tna-menu__item--active {}  // Modifier - a variant of the element
 ```
 
 ### CSS and Sass guidelines
